@@ -34,18 +34,25 @@ namespace QuickNote
 
         System.Windows.Forms.NotifyIcon TryIcon = new System.Windows.Forms.NotifyIcon();
 
-        private void btnClose_MouseDown(object sender, MouseButtonEventArgs e)
+
+
+        void HideApp()
         {
             TryIcon.Icon = new System.Drawing.Icon("note.ico");
             TryIcon.Visible = true;
-            TryIcon.MouseDoubleClick += TryIcon_MouseDoubleClick;
-            this.Hide();
+            TryIcon.MouseClick += TryIcon_MouseClick;
         }
 
-        private void TryIcon_MouseDoubleClick(object sender, System.Windows.Forms.MouseEventArgs e)
+        private void TryIcon_MouseClick(object sender, System.Windows.Forms.MouseEventArgs e)
         {
-            this.Show();
-            TryIcon.Visible = false;
+            if (this.Visibility == Visibility.Hidden)
+            {
+                this.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                this.Visibility = Visibility.Hidden;
+            }
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -64,14 +71,12 @@ namespace QuickNote
             string txt = File.ReadAllText("QiuckNote.txt");
             txtprim.AppendText(txt.Trim());
 
-            string Currentdir = Directory.GetCurrentDirectory() + "QuickNote.exe";
+            string Currentdir = Directory.GetCurrentDirectory() + "\\QuickNote.exe";
             RegistryKey registryKey = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
-            registryKey.SetValue("ApplicationName", Currentdir);
+            registryKey.SetValue("QuickNote", Currentdir);
 
-            TryIcon.Icon = new System.Drawing.Icon("note.ico");
-            TryIcon.Visible = true;
-            TryIcon.MouseDoubleClick += TryIcon_MouseDoubleClick;
-            this.Hide();
+            HideApp();
+            this.Visibility = Visibility.Hidden;
         }
 
         private void txtprim_TextChanged(object sender, TextChangedEventArgs e)
