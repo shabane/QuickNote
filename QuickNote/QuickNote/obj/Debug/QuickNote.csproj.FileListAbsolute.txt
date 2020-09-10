@@ -1,0 +1,15 @@
+c:\users\loading\documents\visual studio 2015\Projects\QuickNote\QuickNote\bin\Debug\QuickNote.exe.config
+c:\users\loading\documents\visual studio 2015\Projects\QuickNote\QuickNote\bin\Debug\QuickNote.exe
+c:\users\loading\documents\visual studio 2015\Projects\QuickNote\QuickNote\bin\Debug\QuickNote.pdb
+c:\users\loading\documents\visual studio 2015\Projects\QuickNote\QuickNote\obj\Debug\QuickNote.csprojResolveAssemblyReference.cache
+c:\users\loading\documents\visual studio 2015\Projects\QuickNote\QuickNote\obj\Debug\MainWindow.g.cs
+c:\users\loading\documents\visual studio 2015\Projects\QuickNote\QuickNote\obj\Debug\App.g.cs
+c:\users\loading\documents\visual studio 2015\Projects\QuickNote\QuickNote\obj\Debug\QuickNote_MarkupCompile.cache
+c:\users\loading\documents\visual studio 2015\Projects\QuickNote\QuickNote\obj\Debug\QuickNote_MarkupCompile.lref
+c:\users\loading\documents\visual studio 2015\Projects\QuickNote\QuickNote\obj\Debug\MainWindow.baml
+c:\users\loading\documents\visual studio 2015\Projects\QuickNote\QuickNote\obj\Debug\QuickNote.g.resources
+c:\users\loading\documents\visual studio 2015\Projects\QuickNote\QuickNote\obj\Debug\QuickNote.Properties.Resources.resources
+c:\users\loading\documents\visual studio 2015\Projects\QuickNote\QuickNote\obj\Debug\QuickNote.csproj.GenerateResource.Cache
+c:\users\loading\documents\visual studio 2015\Projects\QuickNote\QuickNote\obj\Debug\QuickNote.exe
+c:\users\loading\documents\visual studio 2015\Projects\QuickNote\QuickNote\obj\Debug\QuickNote.pdb
+c:\users\loading\documents\visual studio 2015\Projects\QuickNote\QuickNote\obj\Debug\App.baml
