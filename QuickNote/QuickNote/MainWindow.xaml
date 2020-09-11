@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QuickNote"
         mc:Ignorable="d"
-        Title="Quick Note" Height="325" Width="490" WindowStyle="None" ResizeMode="NoResize" MouseDown="Window_MouseDown" Loaded="Window_Loaded" Topmost="True" WindowStartupLocation="CenterScreen">
-    <Grid Background="#313131">
+        Title="Quick Note" Height="315" Width="480" WindowStyle="None" ResizeMode="NoResize" MouseDown="Window_MouseDown" Loaded="Window_Loaded" Topmost="True" WindowStartupLocation="CenterScreen">
+    <Grid Background="#313131" >
         <!--Top Button`s-->
         <!--<Border Margin="0,2.533,10,0" Style="{DynamicResource closebtnstyle}" Name="btnClose" MouseDown="btnClose_MouseDown" Width="27.2" />-->
         <!--<Border Margin="10,2.533,0,0" Style="{DynamicResource settingbtnstyle}"/>-->
         <!--Primary Text Box-->
 
-        <Border  BorderBrush="#138D75" BorderThickness="0.7" Margin="10">
-            <RichTextBox x:Name="txtprim" Margin="-0.7,0,0,10"  Style="{DynamicResource ptextboxstyle}" TextChanged="txtprim_TextChanged"/>
+        <Border CornerRadius="5" BorderBrush="#F39C12" BorderThickness="1">
+            <RichTextBox x:Name="txtprim" Margin="9" MouseDown="txtprim_MouseDown" Style="{DynamicResource ptextboxstyle}" TextChanged="txtprim_TextChanged"/>
         </Border>
 
     </Grid>

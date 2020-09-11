@@ -41,6 +41,7 @@ namespace QuickNote
             TryIcon.Icon = new System.Drawing.Icon("note.ico");
             TryIcon.Visible = true;
             TryIcon.MouseClick += TryIcon_MouseClick;
+            txtprim.Focus();
         }
 
         private void TryIcon_MouseClick(object sender, System.Windows.Forms.MouseEventArgs e)
@@ -48,6 +49,7 @@ namespace QuickNote
             if (this.Visibility == Visibility.Hidden)
             {
                 this.Visibility = Visibility.Visible;
+                txtprim.Focus();
             }
             else
             {
@@ -83,6 +85,11 @@ namespace QuickNote
         {
             var txtRange = new TextRange(txtprim.Document.ContentStart, txtprim.Document.ContentEnd);
             File.WriteAllText("QiuckNote.txt", txtRange.Text.Trim());
+        }
+
+        private void txtprim_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
         }
     }
 }

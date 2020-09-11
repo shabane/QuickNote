@@ -31,7 +31,7 @@
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="FontSize" Value="20"/>
             <Setter Property="Foreground" Value="#ECF0F1"/>
-            <Setter Property="CaretBrush" Value="#82E0AA"/>
+            <Setter Property="CaretBrush" Value="#ECF0F1"/>
             <Setter Property="VerticalScrollBarVisibility" Value="Auto"/>
         </Style>
 

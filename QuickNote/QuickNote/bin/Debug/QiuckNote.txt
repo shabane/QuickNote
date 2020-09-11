@@ -1,1 +1,2 @@
 QuickNote Autosaves The Text While Writing .
+هر چیزی بنویسید خودکار ذخیره خواهد شد .
